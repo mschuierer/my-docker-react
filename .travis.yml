@@ -8,4 +8,4 @@ before_install:
 
 
 script:
-    - docker run schuimax/my-docker-react npm run test -- --coverage    
+    - docker run -e CI=true schuimax/my-docker-react npm run test
